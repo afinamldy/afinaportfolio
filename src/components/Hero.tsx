@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#FAF8F5]"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#FAF8F5] pt-20 pb-32"
     >
       {/* Decorative top-left grain texture circle */}
       <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#F2EDE6] opacity-60 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
@@ -60,7 +60,7 @@ export default function Hero() {
           {/* Inner border */}
           <div className="absolute inset-0 rounded-full border border-[#E5DDD3] pointer-events-none z-10" />
 
-          <div className="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden relative">
+          <div className="w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] rounded-full overflow-hidden relative">
             <Image
               src="/profile-photo.png"
               alt="Afina Maulidya Farahdila"
@@ -81,7 +81,7 @@ export default function Hero() {
           <p className="font-sans text-xs tracking-[0.35em] uppercase text-[#B5713A] mb-2">
             Professional Portfolio
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2A29] tracking-wide">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#2C2A29] tracking-wide">
             Afina Maulidya Farahdila
           </h1>
           <p className="font-sans text-sm text-[#7A7570] mt-2 tracking-widest uppercase">
@@ -95,7 +95,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.8 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer z-10"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer z-10"
         onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
       >
         <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-[#7A7570]">
